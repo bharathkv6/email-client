@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Client</title>
+  </head>
+  <body>
+    <div class="filters">
+      <span>Filter By: </span>
+      <div id="filters">
+        <button id="all" class="active-filter">All</button>
+        <button id="unread">Unread</button>
+        <button id="read">Read</button>
+        <button id="favorites">Favorites</button>
+      </div>
+    </div>
+    <div class="email" id="email-wrapper">
+      <div class="email-list"></div>
+      <div class="email-body no-show"></div>
+    </div>
+    <template id="email-list-item-template">
+      <div class="email-list-item unread">
+        <div class="email-list-item__avatar">
+          <span></span>
+        </div>
+        <div class="email-list-item__content">
+          <div>
+            <span>From: </span>
+            <strong class="from"></strong>
+          </div>
+          <div>
+            <span>Subject: </span>
+            <strong class="subject"></strong>
+          </div>
+          <div class="description-container">
+            <span class="description"></span>
+          </div>
+          <div class="time-container">
+            <span class="time"></span>
+            <strong class="favorite no-show">Favorite</strong>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="email-body-template">
+      <div class="email-body__avatar">
+        <span></span>
+      </div>
+      <div class="email-body__container">
+        <div class="email-body__header">
+          <div>
+            <h2 class="email-body__title"></h2>
+            <div class="email-body__timestamp">
+              <span></span>
+            </div>
+          </div>
+          <button class="email-body__favorite-btn">Mark as favorite</button>
+        </div>
+        <div class="email-body__content"></div>
+      </div>
+    </template>
+  </body>
+</html>

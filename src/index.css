@@ -1,0 +1,167 @@
+body {
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  background-color: #f4f5f9;
+  overflow-y: hidden;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters > div {
+  margin-left: 1rem;
+}
+
+.filters button {
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filters button.active-filter {
+  background-color: #e1e4ea;
+  border: 1.5px solid #cfd2dc;
+  color: #636363;
+}
+
+.email {
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.email-list {
+  height: 93vh;
+  overflow-y: scroll;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+}
+
+.email-list::-webkit-scrollbar {
+  display: none;
+}
+
+.email-body {
+  width: 150%;
+  height: 85vh;
+  margin-left: 1rem;
+  border: 1.5px solid #cfd2dc;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: #636363;
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.email-list-item {
+  border: 1.5px solid #cfd2dc;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  color: #636363;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.email-list-item__avatar {
+  width: 3rem;
+  height: 3rem;
+  background-color: #e54065;
+  border-radius: 2rem;
+  position: relative;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.email-list-item__avatar > span {
+  position: absolute;
+  top: 22%;
+  left: 38%;
+}
+
+.description-container,
+.time-container {
+  margin-top: 0.8rem;
+}
+
+.email-list-item__content {
+  margin: 0 1rem;
+  line-height: 1.5;
+}
+
+.favorite {
+  color: #e54065;
+  margin-left: 8%;
+}
+
+.read {
+  background-color: #f2f2f2;
+}
+
+.unread {
+  background-color: #ffffff;
+}
+
+.email-body__avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #e54065;
+  border-radius: 2rem;
+  position: relative;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.email-body__avatar span {
+  position: absolute;
+  top: 22%;
+  left: 38%;
+}
+
+.email-body__container {
+  width: 100%;
+  margin-left: 1.5rem;
+}
+
+.email-body__container h2 {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.email-body__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-body__favorite-btn {
+  background-color: #e54065;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #ffffff;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.email-body__content {
+  margin-top: 2rem;
+}
+
+.email-list .active-email-item {
+  border: 1.5px solid #e54065;
+}
+
+.no-show {
+  display: none;
+}
+
+.read {
+  background-color: #F2F2F2;
+}
